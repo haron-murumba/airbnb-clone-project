@@ -110,3 +110,106 @@ Pytest
 Purpose: A testing framework used to write and run automated tests for the backend. It ensures the code works as expected and prevents bugs from being introduced.
 Docker
 Purpose: Used to containerize the application and its dependencies, making it easier to develop, test, and deploy consistently across environments.
+
+
+Database Design
+
+The database schema is designed to support core functionality like user management, property listings, bookings, reviews, and payments. Below are the key entities and their relationships.
+
+Users
+
+Represents all users in the system — guests, hosts, or admins.
+Key Fields:
+
+id: Primary key
+name: Full name of the user
+email: Unique email address
+password_hash: Encrypted password
+role: Defines whether the user is a guest, host, or admin
+Relationships:
+A user can own multiple properties
+A user can make multiple bookings
+A user can leave multiple reviews
+
+ Properties
+
+Represents properties listed by hosts for booking.
+Key Fields:
+id: Primary key
+title: Name/title of the property
+description: Detailed property info
+location: Address or area
+price_per_night: Cost of booking per night
+owner_id: Foreign key referencing the user (host)
+
+Relationships:
+
+A property is owned by one user (host)
+A property can have many bookings
+A property can have many reviews
+
+Bookings
+
+Stores information about user reservations.
+Key Fields:
+
+id: Primary key
+user_id: Foreign key referencing the user (guest)
+property_id: Foreign key referencing the property
+start_date: Check-in date
+end_date: Check-out date
+total_price: Total cost of the booking
+
+Relationships:
+
+A booking is made by one user
+A booking is for one property
+ Reviews
+Captures feedback left by users about properties.
+
+Key Fields:
+id: Primary key
+user_id: Foreign key referencing the reviewer
+property_id: Foreign key referencing the property reviewed
+rating: Numeric rating (e.g., 1–5)
+comment: Optional textual feedback
+
+Relationships:
+A review is written by one user
+A review belongs to one property
+
+Payments
+
+Handles payment information related to bookings.
+Key Fields:
+
+id: Primary key
+booking_id: Foreign key referencing the booking
+
+amount: Amount paid
+payment_date: Date of payment
+status: Payment status (e.g., paid, pending, failed)
+Relationships:
+
+A payment is linked to one booking
+
+ Entity Relationships Summary
+
+A User can:
+Own multiple Properties
+Make multiple Bookings
+Write multiple Reviews
+A Property can:
+
+Be booked multiple times (Bookings)
+Have multiple Reviews
+A Booking:
+Belongs to one User (guest)
+Belongs to one Property
+Has one Payment
+A Review:
+Belongs to one User
+Belongs to one Property
+
+A Payment:
+Belongs to one Booking

@@ -90,3 +90,23 @@ Acts as a bridge between stakeholders and the technical team. They gather and do
  UI/UX Designer
 
 Designs the user interface and experience. They create wireframes, prototypes, and high-fidelity mockups, ensuring that the application is intuitive, accessible, and user-friendly.
+
+Technology Stack
+
+This project leverages a modern and scalable technology stack to ensure efficient development, performance, and maintainability.
+Django
+Purpose: A high-level Python web framework used to build secure and scalable web applications. In this project, Django is used to develop the backend and RESTful or GraphQL APIs.
+PostgreSQL
+Purpose: A powerful open-source relational database system. It is used for storing and managing structured data, such as user accounts, application content, and transactional records.
+GraphQL
+
+Purpose: A query language for APIs and a runtime for executing those queries. It allows clients to request exactly the data they need, reducing over-fetching and improving performance.
+ Django REST Framework (DRF)
+Purpose: A toolkit for building Web APIs in Django. It provides serialization, authentication, and view logic to expose backend functionality through RESTful endpoints.
+JWT (JSON Web Tokens)
+Purpose: Used for secure authentication. It ensures that users can log in and receive a token that allows them to access protected resources.
+Pytest
+
+Purpose: A testing framework used to write and run automated tests for the backend. It ensures the code works as expected and prevents bugs from being introduced.
+Docker
+Purpose: Used to containerize the application and its dependencies, making it easier to develop, test, and deploy consistently across environments.

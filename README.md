@@ -61,3 +61,32 @@ pip install -r requirements.txt
 python3 console.py
  Contributing
 This project is developed as part of the ALX Software Engineering Program. Contributions are welcome from peers within the program.
+
+## team roles
+
+Team Roles
+
+Below is a list of team roles and their responsibilities within the project:
+
+Backend Developer
+Responsible for building and maintaining the server-side logic of the application. They develop APIs, integrate with databases, ensure data flow, and implement business logic. Their work ensures that the application performs efficiently and securely behind the scenes.
+
+ Frontend Developer
+Focuses on the client-side of the application. They implement user interfaces based on design mockups, handle user interactions, and ensure responsiveness across devices and browsers using technologies like HTML, CSS, and JavaScript frameworks.
+ Database Administrator (DBA)
+
+Designs, implements, and manages the project's database systems. They ensure data integrity, security, backup, and performance tuning. The DBA works closely with backend developers to optimize queries and data structures.
+ QA Engineer (Quality Assurance)
+
+Responsible for testing the application to find bugs and ensure functionality meets requirements. They create test cases, perform manual and automated testing, and collaborate with developers to resolve issues and maintain quality standards.
+Project Manager (PM)
+
+Oversees the project from planning to delivery. The PM ensures the team follows timelines, meets deliverables, manages resources, and communicates with stakeholders. They also facilitate meetings and remove roadblocks.
+
+ Business Analyst (BA)
+
+Acts as a bridge between stakeholders and the technical team. They gather and document requirements, analyze business processes, and help ensure the final product aligns with business goals.
+
+ UI/UX Designer
+
+Designs the user interface and experience. They create wireframes, prototypes, and high-fidelity mockups, ensuring that the application is intuitive, accessible, and user-friendly.

@@ -213,3 +213,33 @@ Belongs to one Property
 
 A Payment:
 Belongs to one Booking
+
+
+Feature Breakdown
+1. User Management
+
+The platform supports user registration, login, and authentication. Users can securely manage their profiles, view booking history, and interact with listings based on their roles (host or guest).
+
+2. Property Management
+
+Hosts can create, update, and delete property listings. Each listing includes details like title, description, location, price, availability, and images, enabling users to showcase their spaces effectively.
+
+3. Booking System
+
+Guests can browse available properties and make bookings for specific dates. The system checks for availability, prevents overlapping reservations, and confirms successful bookings.
+
+4. Search and Filtering
+
+Users can search for properties by location, date, number of guests, and other filters. This improves the user experience by helping guests find suitable stays quickly and easily.
+
+5. Reviews and Ratings
+
+After a completed stay, guests can leave reviews and rate the property. This feedback mechanism helps maintain quality and builds trust between users.
+
+6. Payment Integration (Optional/Advanced)
+
+Secure payment processing allows guests to pay for bookings within the platform. Integration with services like Stripe ensures secure transactions and a smooth user experience.
+
+7. Responsive UI/UX
+
+The interface is designed to work across devices, offering a seamless experience on desktop and mobile. Clean layouts and interactive elements make the platform intuitive for users.

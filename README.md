@@ -277,3 +277,24 @@ Why it's important: Ensures data confidentiality during transmission, especially
 
 What it is: Integrates secure third-party payment gateways like Stripe or PayPal.
 Why it's important: Offloads the responsibility of handling financial transactions to trusted services, ensuring PCI compliance and reducing fraud risk.
+
+
+CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying code. This ensures that new features and fixes are integrated seamlessly, bugs are caught early, and deployments are consistent and reliable.
+
+Why CI/CD is Important
+
+Automated Testing: Ensures code quality by automatically running tests on every commit or pull request.
+
+Faster Development: Speeds up the development lifecycle by reducing manual steps and human error.
+
+Reliable Deployments: Automatically deploys updates to staging or production environments, making the release process efficient and repeatable.
+
+Tools Used
+
+GitHub Actions: Automates workflows such as running tests and deploying code when changes are pushed.
+
+Docker: Creates containerized environments for consistent development, testing, and deployment.
+
+(Optional) Heroku / Vercel / AWS: Used for hosting and deploying the application.

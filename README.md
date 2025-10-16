@@ -243,3 +243,37 @@ Secure payment processing allows guests to pay for bookings within the platform.
 7. Responsive UI/UX
 
 The interface is designed to work across devices, offering a seamless experience on desktop and mobile. Clean layouts and interactive elements make the platform intuitive for users.
+
+API Security
+
+Securing backend APIs is critical to protect user data, maintain platform integrity, and ensure safe interactions between clients and the server. Below are the key security measures implemented in this project:
+
+1. Authentication
+
+What it is: Verifies the identity of users using methods like JWT (JSON Web Tokens) or OAuth.
+Why it's important: Ensures that only registered users can access the platform’s features, preventing unauthorized access to user accounts and sensitive data.
+
+2. Authorization
+
+What it is: Determines what an authenticated user is allowed to do (e.g., only hosts can create listings, only guests can book).
+Why it's important: Protects resources by enforcing role-based access control, ensuring users can only perform actions permitted by their role.
+
+3. Rate Limiting
+
+What it is: Limits the number of requests a user can make in a given timeframe.
+Why it's important: Helps prevent abuse (e.g., brute-force attacks or spam) and reduces server load by mitigating denial-of-service (DoS) attacks.
+
+4. Input Validation & Sanitization
+
+What it is: Validates and sanitizes incoming data to prevent injection attacks.
+Why it's important: Protects against SQL injection, cross-site scripting (XSS), and other forms of malicious input that can compromise system integrity.
+
+5. HTTPS Encryption
+
+What it is: Encrypts all communication between the client and the server using HTTPS.
+Why it's important: Ensures data confidentiality during transmission, especially for sensitive information like passwords and payment details.
+
+6. Secure Payment Handling
+
+What it is: Integrates secure third-party payment gateways like Stripe or PayPal.
+Why it's important: Offloads the responsibility of handling financial transactions to trusted services, ensuring PCI compliance and reducing fraud risk.
